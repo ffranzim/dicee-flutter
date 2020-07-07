@@ -57,10 +57,10 @@ class _DicePageState extends State<DicePage> {
 
   void playDice() {
     setState(() {
-      leftDiceNumber = _randomNumberOneSix();
-      rightDiceNumber = _randomNumberOneSix();
+      leftDiceNumber = _randomNumberOneUpToSix();
+      rightDiceNumber = _randomNumberOneUpToSix();
     });
   }
 
-  int _randomNumberOneSix() => Random().nextInt(6) + 1;
+  int _randomNumberOneUpToSix() => Random().nextInt(6) + 1;
 }
